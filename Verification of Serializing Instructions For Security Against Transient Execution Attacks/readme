@@ -1,1 +1,22 @@
+The out-of-order machine has 4 main stages: Issue, Dispatch, Broadcast and Commit.
+In all the codes, any variable name starting with T_ represents the initial symbolic state.
+Upon successfully issuing an instruction, state T_ changes to state U1_.
+Dispatching an instruction changes state U1_ to state U2_.
+Broadcasting a result changes state U2_ to state U3_.
+Committing an instruction gives the final state U4_.
 
+In the Non_Buggy folder, the benchmarks are bug-free and Trojan-free. The invariants can be found in the following lines.
+Invariant 1: Line 4952 (T_state) and Line 6480 (U4_State).
+Invariant 2: Lines 5099 to 5194 (T_state) and Lines 6720 to 6815 (U4_State).
+Invariant 3a: Lines 6263 to 115285 (T_state) and Lines 116815 to 225837 (U4_State).
+Invariant 3b: Lines 6263 to 118738 (T_state) and Lines 120266 to 230279 (U4_State).
+Invariant 3c: Lines 6265 to 118711 (T_State) and Lines 120241 to 232688 (U4_State).
+Invariant 4: Line 340296 (T_State) and Line 341823 (U4_State).
+Invariant 5: Lines 5161 to 5229 (T_State) and Lines 6758 to 6825 (U4_State).
+Invariant 6: Lines 4949 to 4965 (T_State) and Lines 6548 to 6564 (U4_State).
+Invariant 7: Lines 5006 to 5022 (T_State) and Lines 6548 to 6564 (U4_State).
+
+In the LTag_Trojans folder, the PC trojan, the Rob Opcode trojan, the Timer trojan and the RF6 trojan, can be found on line 2176.
+The LTag bug can be found on lines 2726 and 2738.
+
+In the MRF_Trojans folder, all the Trojans and the bugs can be found on line 2064.
