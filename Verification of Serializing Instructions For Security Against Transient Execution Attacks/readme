@@ -1,8 +1,8 @@
 The out-of-order machine has 4 main stages: Issue, Dispatch, Broadcast and Commit.
 In all the codes, any variable name starting with T_ represents the initial symbolic state.
 Upon successfully issuing an instruction, state T_ changes to state U1_.
-Dispatching an instruction changes state U1_ to state U2_.
-Broadcasting a result changes state U2_ to state U3_.
+Updating the microarchitecture changes state U1_ to state U2_.
+Dispatching an instruction, Broadcasting a result and updating the microarchitecture changes state U2_ to state U3_.
 Committing an instruction gives the final state U4_.
 
 In the Non_Buggy folder, the benchmarks are bug-free and Trojan-free. The invariants can be found in the following lines.
