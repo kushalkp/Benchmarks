@@ -11,7 +11,7 @@ Invariant 2: Lines 5099 to 5194 (T_state) and Lines 6720 to 6815 (U4_State).
 Invariant 3a: Lines 6263 to 115285 (T_state) and Lines 116815 to 225837 (U4_State).
 Invariant 3b: Lines 6263 to 118738 (T_state) and Lines 120266 to 230279 (U4_State).
 Invariant 3c: Lines 6265 to 118711 (T_State) and Lines 120241 to 232688 (U4_State).
-Invariant 4: Line 340296 (T_State) and Line 341823 (U4_State).
+Invariant 4: Lines 340296 ti 340298 (T_State) and Lines 341823 to 341825 (U4_State).
 Invariant 5: Lines 5161 to 5229 (T_State) and Lines 6758 to 6825 (U4_State).
 Invariant 6: Lines 4949 to 4965 (T_State) and Lines 6548 to 6564 (U4_State).
 Invariant 7: Lines 5006 to 5022 (T_State) and Lines 6548 to 6564 (U4_State).
