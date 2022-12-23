@@ -6,17 +6,22 @@ Dispatching an instruction, Broadcasting a result and updating the microarchitec
 Committing an instruction gives the final state U4_.
 
 In the Non_Buggy folder, the benchmarks are bug-free and Trojan-free. The invariants can be found in the following lines.
-Invariant 1: Line 4952 (T_state) and Line 6480 (U4_State).
-Invariant 2: Lines 5099 to 5194 (T_state) and Lines 6720 to 6815 (U4_State).
-Invariant 3a: Lines 6263 to 115285 (T_state) and Lines 116815 to 225837 (U4_State).
-Invariant 3b: Lines 6263 to 118738 (T_state) and Lines 120266 to 230279 (U4_State).
-Invariant 3c: Lines 6265 to 118711 (T_State) and Lines 120241 to 232688 (U4_State).
-Invariant 4: Lines 340296 ti 340298 (T_State) and Lines 341823 to 341825 (U4_State).
-Invariant 5: Lines 5161 to 5229 (T_State) and Lines 6758 to 6825 (U4_State).
-Invariant 6: Lines 4949 to 4965 (T_State) and Lines 6548 to 6564 (U4_State).
-Invariant 7: Lines 5006 to 5022 (T_State) and Lines 6548 to 6564 (U4_State).
+Invariant 1: Refer to Invariant1.smt2 file in Lines 4952 to 5235 (T_state) and Lines 6762 to 6833 (U4_State).
+Invariant 2: Refer to Invariant2.smt2 file in Lines 5167 to 5262 (T_state) and Lines 6787 to 6884 (U4_State).
+Invariant 3a: Refer to Invariant3.smt2 file in Lines 6332 to 44858 (T_state) and Lines 117718 to 156244 (U4_State).
+Invariant 3b: Refer to Invariant3.smt2 file in Lines 44862 to 80460 (T_state) and Lines 156248 to 191846 (U4_State).
+Invariant 3c: Refer to Invariant3.smt2 file in Lines 80464 to 116190 (T_State) and Lines 191850 to 227576 (U4_State).
+Invariant 4: Refer to Invariant4.smt2 file in Lines 116204 to 116208 (T_State) and Lines 117734 to 117738 (U4_State).
+Invariant 5: Refer to Invariant5.smt2 file in Lines 5161 to 5229 (T_State) and Lines 6758 to 6825 (U4_State).
+Invariant 6: Refer to Invariant6.smt2 file in Lines 4949 to 4965 (T_State) and Lines 6547 to 6565 (U4_State).
+Invariant 7: Refer to Invariant7.smt2 file in Lines 5006 to 5022 (T_State) and Lines 6547 to 6564 (U4_State).
 
-In the LTag_Trojans folder, the PC trojan, the Rob Opcode trojan, the Timer trojan and the RF6 trojan, can be found on line 2176.
-The LTag bug can be found on lines 2726 and 2738.
+T/U4_Main_LTag in SMT benchmarks is the same as mrf mentioned in the invariant formulae in the paper.
+T/U4_RS_ROB_Dst in SMT benchmarks is the same as RS.DstTag in the invariant formulae in the paper.
 
-In the MRF_Trojans folder, all the Trojans and the bugs can be found on line 2064.
+Experiments which demonstrate the triggering of LTag and MRF Trojans can be found in the Experiments folder.
+
+In the LTag_Trojans folder, the PC trojan, the Rob Opcode trojan, the Timer trojan and the RF6 trojan, can be found on line 2176 in all invariant files.
+The LTag bug can be found on lines 2661 and 2673 in all the invariant files in the LTag_Trojans -> Bug folder.
+
+In the MRF_Trojans folder, all the Trojans and the bugs can be found on line 2064 in all the invariant files.
