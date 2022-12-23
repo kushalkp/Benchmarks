@@ -19,7 +19,9 @@ Invariant 7: Refer to Invariant7.smt2 file in Lines 5006 to 5022 (T_State) and L
 T/U4_Main_LTag in SMT benchmarks is the same as mrf mentioned in the invariant formulae in the paper.
 T/U4_RS_ROB_Dst in SMT benchmarks is the same as RS.DstTag in the invariant formulae in the paper.
 
-Experiments which demonstrate the triggering of LTag and MRF Trojans can be found in the Experiments folder.
+Experiments which demonstrate the triggering of LTag and MRF Trojans can be found in the Experiments folder. For the LTag trojan, we first show the property not
+getting violated for the Trojan free model but produces a counter example for the model with the embedded PC trojan. Similar experiment is performed on the MRF
+trojan.
 
 In the LTag_Trojans folder, the PC trojan, the Rob Opcode trojan, the Timer trojan and the RF6 trojan, can be found on line 2176 in all invariant files.
 The LTag bug can be found on lines 2661 and 2673 in all the invariant files in the LTag_Trojans -> Bug folder.
